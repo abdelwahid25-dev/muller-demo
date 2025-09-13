@@ -1,0 +1,22 @@
+POST /v1/auth/otp/send?lang='en'
+Description:
+  send opt ,lang(en,ar)
+Request:
+  Headers:
+    Authorization:
+    Content-Type: application/json
+  Body:
+  {
+   "phone":string,//+966566*****9
+  }
+Response
+  Success Response (200 otp send):
+    Headers:
+    Body:
+
+  Errors:
+    400 Bad Request - invalid item 
+    429 Too Many Requests
+    .
+    .
+    .

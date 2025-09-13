@@ -1,0 +1,30 @@
+POT /v1/friends/recommend
+Description: friends recommending
+Request:
+  Headers:
+    Authorization: Bearer <token>
+    Content-Type: application/json
+  Body:
+    {
+      "phone":string
+    }
+   
+Response
+  Success Response (200 ok):
+    Headers:
+    Body: //send otp to the number if ....
+     
+  Errors:
+    400 Bad Request - user already exist or already recommended
+    403 Unauthorized
+    .
+    .
+    .
+    {
+      "error": "User exist",
+      "message": {
+          "en": "User already exist or already recommended"
+          "ar": ""
+      }
+
+    }

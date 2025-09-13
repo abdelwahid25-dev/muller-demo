@@ -1,0 +1,21 @@
+GEt /v1/ads/watch/daily-watch/cout
+Description: ads daily watch
+Request:
+  Headers:
+    Authorization: Bearer <token>
+    Content-Type: application/json
+  Body:
+Response
+  Success Response (200 ok):
+    Headers:
+    Body:
+     {
+       count:int
+     }
+    
+  Errors:
+    400 Bad Request - invalid item 
+    403 Unauthorized
+    .
+    .
+    .

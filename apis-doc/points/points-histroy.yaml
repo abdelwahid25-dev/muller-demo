@@ -1,0 +1,26 @@
+GET /v1/points/history
+Description: points history fetching
+Request:
+  Headers:
+    Authorization: Bearer <token>
+    Content-Type: application/json
+  Body:
+Response
+  Success Response (200 ok):
+    Headers:
+    Body:  ==>all are int <==
+      [
+        {
+          "id": 5,
+          "type": "sharedFrom", any of [watch, sharedFrom, sharedTo, redeem, recommend]
+          "points": 30,
+          "description": "Shared referral 1",
+          "date": "2025-09-02T10:15:00Z"
+        },
+      ]
+  Errors:
+    400 Bad Request - invalid item 
+    403 Unauthorized
+    .
+    .
+    .

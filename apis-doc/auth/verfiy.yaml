@@ -1,0 +1,24 @@
+POST /v1/auth/otp/verify?lang='en'
+Description:
+  verify opt ,lang(en,ar)
+Request:
+  Headers:
+    Authorization:
+    Content-Type: application/json
+  Body:
+  {
+    "otp":string,//22334
+  }
+  
+Response
+  Success Response (200 otp send):
+    Headers:
+    Body:
+      {
+        user data: look for it in data-structure/user
+      }
+  Errors:
+    400 Bad Request - invalid item 
+    401 Wrong / invalid OTP
+    410 OTP expired
+    429 Too Many Requests

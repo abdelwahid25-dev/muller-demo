@@ -1,0 +1,18 @@
+POST /v1/ads/watch/{id}
+Description: ads like
+Request:
+  Headers:
+    Authorization: Bearer <token>
+    Content-Type: application/json
+  Body:
+Response
+  Success Response (200 ok):
+    Headers:
+    Body:
+    
+  Errors:
+    400 Bad Request - invalid item 
+    403 Unauthorized
+    .
+    .
+    .

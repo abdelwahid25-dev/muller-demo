@@ -1,0 +1,30 @@
+POT /v1/friends/recommend/verify
+Description: friends recommending verify
+Request:
+  Headers:
+    Authorization: Bearer <token>
+    Content-Type: application/json
+  Body:
+    {
+      "opt":string
+    }
+   
+Response
+  Success Response (200 ok):
+    Headers:
+    Body:
+     
+  Errors:
+    400 Bad Request - invalid otp
+    403 Unauthorized
+    .
+    .
+    .
+    {
+      "error": "User exist",
+      "message": {
+          "en": " invalid otp"
+          "ar": ""
+      }
+
+    }

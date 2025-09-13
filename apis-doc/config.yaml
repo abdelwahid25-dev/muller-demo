@@ -1,0 +1,56 @@
+Ads rewards Apis
+Description:
+  Ads rewards app api's doc
+version: "1.0.0"
+  
+Request:
+  Headers:
+    Authorization: Bearer <token>
+    Content-Type: application/json
+  Body:
+    json
+  
+Response
+  Headers:
+    Location
+  Body:
+    json
+
+  Success Response 
+    200 Success
+    201 Created
+    202 Accepted
+    203 Non-Authoritative Information (ndicates that the returned metadata is from a local or third-party copy, not the origin server)
+    204 No Content
+    205 Reset Content
+    206 Partial Content
+    
+  Errors Response:
+    4xx: Client Error Responses
+      400 Bad Request - invalid item SKU
+      401 Unauthorized - missing/invalid token
+      403 Forbidden
+    5xx: Server Error Responses
+      500 Internal Server Error
+      501 Not Implemented
+      502 Bad Gateway 
+      502 Service Unavailable
+      507 Insufficient Storage (WebDAV)
+
+  Error response (Consistent):
+    {
+      "error": "invalid_parameter",
+      "message":{
+        "en":"error message in engilsh",
+        "ar":"error message in arabic"
+      }
+    }
+
+
+**hinst**
+defulat of empty value is null
+example 
+  {
+    image: null,string mean has no image,it's no mean "",or empty string
+  
+  }

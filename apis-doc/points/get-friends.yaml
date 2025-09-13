@@ -1,0 +1,20 @@
+GET /v1/friends
+Description: friends fetching
+Request:
+  Headers:
+    Authorization: Bearer <token>
+    Content-Type: application/json
+  Body:
+Response
+  Success Response (200 ok):
+    Headers:
+    Body:  ==<list of users<== 
+      [
+        user data: look for it in data-structure/user
+      ]
+  Errors:
+    400 Bad Request - invalid item 
+    403 Unauthorized
+    .
+    .
+    .

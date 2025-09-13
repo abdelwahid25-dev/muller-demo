@@ -1,0 +1,32 @@
+POT /v1/friends
+Description: friends adding
+Request:
+  Headers:
+    Authorization: Bearer <token>
+    Content-Type: application/json
+  Body:
+   {
+     "phone":string
+   }
+   
+Response
+  Success Response (200 ok):
+    Headers:
+    Body:  data of added friends 
+     {
+        user data: look for it in data-structure/user
+     }
+  Errors:
+    400 Bad Request - invalid item  (User does not exist for the provided phone number)
+    403 Unauthorized
+    .
+    .
+    .
+    {
+      "error": "not_found",
+      "message": {
+          "en": "User does not exist for the provided phone number."
+          "ar": ""
+      }
+
+    }

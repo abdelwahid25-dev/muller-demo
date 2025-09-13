@@ -1,0 +1,21 @@
+POT /v1/friends/share/{id} //friend id (user)
+Description: share point with friends
+Request:
+  Headers:
+    Authorization: Bearer <token>
+    Content-Type: application/json
+  Body:
+Response
+  Success Response (200 ok):
+    Headers:
+    Body:
+      {
+        "points":int,
+      }
+    
+  Errors:
+    400 Bad Request - invalid item 
+    403 Unauthorized
+    .
+    .
+    .

@@ -1,0 +1,25 @@
+GET /v1/points/details
+Description: points fetching details
+Request:
+  Headers:
+    Authorization: Bearer <token>
+    Content-Type: application/json
+  Body:
+Response
+  Success Response (200 ok):
+    Headers:
+    Body:  ==>all are int <==
+      {
+        "total_gain": 1000,
+        "total_remain": 750,
+        "used": 200,
+        "shared_to": 30,
+        "shared_from":60,
+        "expired": 20
+      }
+  Errors:
+    400 Bad Request - invalid item 
+    403 Unauthorized
+    .
+    .
+    .

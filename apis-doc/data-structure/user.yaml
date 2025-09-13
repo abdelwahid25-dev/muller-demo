@@ -1,0 +1,19 @@
+
+{
+  "id": 123, //int **Required**
+  "email": "test@example.com",//string 
+  "name": "Abdelwahid Muller",//string **Required**
+  "phone": "+9665661****9", // string **Required**
+  "age": 30,//int
+  "lang":"en",//lang code [en,ar],
+  "gender": "male",// [male,female],
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9",//string **Required for auth**
+  "is_completed_profile": true,//bool 
+  "country": {
+    "id": 10,//int **Required**,
+    "iso2": "SA",//string ex =>SA UK **Required** , 
+    "dial_code": "+966", //string
+    "name": "Saudi Arabia",//string
+    "names": {"en": "Saudi Arabia", "ar": "السعودية"},**Required**
+  }
+}

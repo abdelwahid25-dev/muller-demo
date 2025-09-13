@@ -1,0 +1,24 @@
+PUT /v1/auth/profile
+Description: update user info
+Request:
+  Headers:
+    Authorization: Bearer <token>
+    Content-Type: application/json
+  Body: 
+  { 
+    -->[name,age,gender,is_completed_profile,lang,country_iso2]<--
+  }
+Response
+
+  Success Response (200 ok):
+  Headers:
+  Body:
+    {
+      user data: look for it in data-structure/user
+    }
+  Errors:
+    400 Bad Request - invalid item 
+    403 Unauthorized
+    .
+    .
+    .
