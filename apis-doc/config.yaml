@@ -9,7 +9,6 @@ Request:
     Content-Type: application/json
   Body:
     json
-  
 Response
   Headers:
     Location
