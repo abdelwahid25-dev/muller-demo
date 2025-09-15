@@ -1,5 +1,5 @@
-GET /v1/ads
-Description: ads fetching
+GET /v1/ads?page=1?limt=10
+Description: ads fetching. page pram for pagination 
 Request:
   Headers:
     Authorization: Bearer <token>

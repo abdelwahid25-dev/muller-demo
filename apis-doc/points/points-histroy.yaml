@@ -1,4 +1,4 @@
-GET /v1/points/history
+GET /v1/points/history?page=1?limt=10
 Description: points history fetching
 Request:
   Headers:

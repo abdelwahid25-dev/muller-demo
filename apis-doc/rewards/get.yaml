@@ -1,4 +1,4 @@
-GET /v1/rewards
+GET /v1/rewards?page=1?limt=10
 Description: rewards fetching
 Request:
   Headers:

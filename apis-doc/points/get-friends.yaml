@@ -1,4 +1,4 @@
-GET /v1/friends
+GET /v1/friends?page=1?limt=50
 Description: friends fetching
 Request:
   Headers:
