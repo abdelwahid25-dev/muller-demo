@@ -21,3 +21,7 @@ Response
     .
     .
     .
+    {
+      "error": "Not enough points",
+      "message": string //base on language
+    }

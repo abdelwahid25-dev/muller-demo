@@ -9,8 +9,12 @@ Response
   Success Response (200 ok):
     Headers:
     Body:
-     {
-       count:int
+     {  
+        "total_count":int,
+        "daily_total_counts":int,
+        "daily_new_count":int
+        "daily_must_watch_count":int
+        "bonus_point":int
      }
     
   Errors:

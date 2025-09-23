@@ -1,4 +1,4 @@
-GET /v1/ads?page=1?limt=10
+GET /v1/ads?page=1?limt=10?liked=true
 Description: ads fetching. page pram for pagination 
 Request:
   Headers:

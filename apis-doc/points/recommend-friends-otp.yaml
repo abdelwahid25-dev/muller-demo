@@ -21,10 +21,9 @@ Response
     .
     .
     {
-      "error": "User exist",
+      "error": "Invalid OTP",
       "message": {
-          "en": " invalid otp"
+          "en": "Invalid OTP"
           "ar": ""
       }
-
     }

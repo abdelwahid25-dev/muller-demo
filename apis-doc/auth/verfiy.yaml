@@ -8,6 +8,7 @@ Request:
   Body:
   {
     "otp":string,//22334
+    "phone":string,//+966566*****9,
   }
   
 Response

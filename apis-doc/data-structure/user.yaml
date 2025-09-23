@@ -9,7 +9,7 @@
   "gender": "male",// [male,female],
   "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9",//string **Required for auth**
   "is_completed_profile": true,//bool 
-  "country": {
+  "country": {  //false or non
     "id": 10,//int **Required**,
     "iso2": "SA",//string ex =>SA UK **Required** , 
     "dial_code": "+966", //string

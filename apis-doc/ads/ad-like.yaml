@@ -1,10 +1,13 @@
-POST /v1/ads/watch/{id}
+POST /v1/ads/like/{id}
 Description: ads like
 Request:
   Headers:
     Authorization: Bearer <token>
     Content-Type: application/json
   Body:
+    {
+       like: boolean //true or false
+    }
 Response
   Success Response (200 ok):
     Headers:

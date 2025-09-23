@@ -17,6 +17,15 @@ Response
   Errors:
     400 Bad Request - invalid item 
     403 Unauthorized
-    .
-    .
-    .
+    401 Unauthorized - missing or invalid token
+    404 Not Found - resource not found
+    500 Internal Server Error - server encountered an error
+    502 Bad Gateway - invalid response from upstream server
+    503 Service Unavailable - server is temporarily unavailable
+    405 Method Not Allowed - invalid HTTP method used
+    406 Not Acceptable - unacceptable response format requested
+    408 Request Timeout - server timed out waiting for the request
+    409 Conflict - request could not be completed due to a conflict
+    415 Unsupported Media Type - invalid Content-Type header
+    429 Too Many Requests - rate limit exceeded
+    504 Gateway Timeout - upstream server failed to respond

@@ -7,7 +7,8 @@ Request:
     Content-Type: application/json
   Body:
   {
-   "phone":string,//+966566*****9
+   "phone":string,//566*****9
+   "country_code":string,//966,
   }
 Response
   Success Response (200 otp send):

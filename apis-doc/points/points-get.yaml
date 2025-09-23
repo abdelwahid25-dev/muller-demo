@@ -10,7 +10,7 @@ Response
     Headers:
     Body:  
       {
-        "points":int
+        "points":int//4000  total blance points
       }
   Errors:
     400 Bad Request - invalid item 
