@@ -16,6 +16,7 @@ Response
   Errors:
     400 Bad Request - invalid item 
     403 Unauthorized
+    402 PointsNotEnough - not enough points to redeem
     .
     .
     .

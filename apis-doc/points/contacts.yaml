@@ -1,0 +1,41 @@
+POT /v1/contacts-check
+Description: contacts checking
+Request:
+  Headers:
+    Authorization: Bearer <token>
+    Content-Type: application/json
+  Body:
+    {
+      "contacts":[string,...] //ex ksa numbers ["+966512345678","+966512345679"]
+    }
+   
+Response
+  Success Response (200 ok):
+    Headers:
+    Body:  data of check friends 
+     {
+     
+      "exists": {
+            "+966512345678": true,
+            "+966512345679": false,
+            ...
+          },
+          "userIds": {
+              "+966512345678": 12,
+              "+249904585780": 145,
+          },
+        }
+    }
+  Errors:
+    400 Bad Request
+    403 Unauthorized
+    .
+    .
+    .
+    {
+      "error": "not_found",
+      "message": {
+          "en": "User does not exist for the provided phone number."
+          "ar": ""
+      }
+    }
